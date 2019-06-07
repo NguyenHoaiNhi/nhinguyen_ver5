@@ -1,0 +1,187 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:background="#DDDDDD"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+    <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp" android:layout_marginTop="5dp"
+
+            android:background="@drawable/backgroung1"
+            android:layout_marginLeft="7dp" android:layout_marginRight="7dp">
+
+        <Spinner
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="140dp"
+                android:id="@+id/spinner1"
+                android:layout_height="wrap_content" android:layout_alignParentTop="true">
+
+        </Spinner>
+        <ImageView android:id="@+id/translate"
+                   android:layout_width="50dp"
+                   android:layout_height="40dp"
+                   android:src="@drawable/exchange"
+
+                   android:layout_centerHorizontal="true"
+                   android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+        <Spinner android:layout_width="140dp"
+                 android:id="@+id/spinner2"
+                 android:layout_alignParentEnd="true"
+                 android:layout_marginRight="10dp"
+                 android:layout_marginTop="9dp"
+                 android:layout_height="wrap_content" android:layout_alignParentRight="true"></Spinner>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+            android:background="@drawable/backgroung1"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp" android:layout_alignParentStart="true">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:textColor="#2980b9"
+                android:id="@+id/tvEnglish"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp" android:layout_marginTop="5dp"/>
+
+        <EditText
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Type your text here"
+                android:id="@+id/edEnglish"
+                android:layout_below="@id/tvEnglish"
+                android:layout_marginTop="2dp"/>
+        <ImageView
+
+                android:id="@+id/btnSpeak"
+                android:layout_alignParentLeft="true"
+                android:layout_width="60dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/voice"
+                android:layout_height="60dp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:background="@drawable/backgroung1"
+    >
+
+
+        <ImageView android:id="@+id/Save_screen"
+                   android:layout_width="50dp"
+                   android:layout_height="40dp"
+
+                   android:src="@drawable/save1"
+                   android:layout_toLeftOf="@id/camera"
+
+                   android:layout_marginTop="10dp"
+                   android:layout_marginBottom="2dp"
+                   android:layout_marginRight="0dp" android:layout_alignParentTop="true"/>
+
+        <ImageView android:id="@+id/camera"
+                   android:layout_width="50dp"
+                   android:layout_height="40dp"
+                   android:layout_centerHorizontal="true"
+                   android:src="@drawable/camera"
+
+                   android:layout_marginTop="6dp"
+                   android:layout_marginBottom="2dp" android:layout_marginLeft="80dp"/>
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Camera"
+                android:textColor="#34495E"
+                android:id="@id/text2"
+                android:layout_below="@id/camera"
+                android:textSize="18dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="74dp"
+
+                android:layout_marginBottom="2dp"/>
+
+
+        <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:background="@drawable/translate"
+                android:textColor="#FFFFFF"
+                android:text="TRANSLATE"
+                android:layout_toRightOf="@id/camera"
+
+                android:id="@+id/btTranslate"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="42dp"/>
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/backgroung1"
+            android:layout_height="150dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp">
+
+        <TextView
+                android:id="@+id/tvVietnamese"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vietnamese"
+                android:textColor="#2980b9"
+
+                android:textSize="20dp"
+
+                android:layout_marginLeft="10dp" android:layout_marginTop="10dp"/>
+
+        <ImageView android:id="@+id/save"
+                   android:layout_width="25dp"
+                   android:layout_height="26dp"
+                   android:src="@drawable/save"
+
+                   android:layout_toRightOf="@id/tvVietnamese"
+                   android:layout_marginTop="5dp"
+                   android:layout_marginBottom="5dp"
+                   android:layout_marginLeft="170dp"/>
+
+        <TextView
+
+                android:hint="Your translation appears here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edVietnam"
+                android:layout_below="@id/tvVietnamese"
+                android:layout_marginTop="1dp" android:layout_marginLeft="3dp" android:layout_marginRight="3dp"/>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
